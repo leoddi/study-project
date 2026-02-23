@@ -4,8 +4,7 @@ import "./globals.css";
 import UpperMenu from "@/components/UpperMenu";
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ['200', '300', '400']
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
@@ -21,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat} antialiased`}
+        className={montserrat.className}
       >
       <UpperMenu />
         {children}
