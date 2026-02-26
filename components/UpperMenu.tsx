@@ -59,8 +59,8 @@ function UpperMenu() {
     </div>
 
     {menuNav!=""?
-      <div className="w-full h-full absolute hidden lg:block mt-18">
-        <div onMouseLeave={()=>setmenuNav("")} className="w-2/3 h-5/7 bg-blue-50 flex z-50 absolute">
+      <div className='w-full h-full absolute hidden lg:block mt-18'>
+        <div onMouseLeave={()=>setmenuNav("")} className='w-2/3 h-5/7 bg-blue-50 flex z-50 absolute'>
           <div className="bg-[#4A362A] h-full w-1/2 flex justify-center items-center uppercase text-[#9e8879] text-xl font-light space-y-4">
             <DropDownMenu links={ROUTE_MAP[menuNav]} divider={true} />
           </div>
