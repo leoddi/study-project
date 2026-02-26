@@ -3,7 +3,7 @@ import bookIcon from '../public/food-svgrepo-com.svg'
 
 function FixedBtns() {
   return (
-    <div className="fixed bottom-28 -right-42 space-y-4 z-50">
+    <div className="hidden lg:block fixed bottom-28 -right-42 space-y-4 z-50 ">
         <div className="h-18 bg-[#A65247] w-60 flex items-center space-x-12 px-3 text-xl uppercase hover:-translate-x-40 transition ease-in delay-200">
             <Image src={bookIcon} alt="booking-icon" height={45} width={45} />
             <p>book</p>
