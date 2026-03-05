@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Happy Birthday Getaway",
+    "date": "15/03/2026 - 21/03/2026",
+    "image": "/offers-data/happy-birthday.webp",
+    "alt": "alt",
+    "price": "4 nights from 659,-"
+  },
+  {
+    "title": "Honeymoon in South Tirol",
+    "date": "01/04/2026 - 08/04/2026",
+    "image": "/offers-data/honeymoon-in-south-tirol.webp",
+    "alt": "alt",
+    "price": "7 nights from 659,-"
+  },
+  {
+    "title": "Last Minute Escape",
+    "date": "20/03/2026 - 24/03/2026",
+    "image": "/offers-data/last-minute.webp",
+    "alt": "alt",
+    "price": ""
+  },
+  {
+    "title": "My Time For Me",
+    "date": "05/04/2026 - 10/04/2026",
+    "image": "/offers-data/my-time-for-me.webp",
+    "alt": "alt",
+    "price": "5 nights from 659,-"
+  },
+  {
+    "title": "Time For You And Me",
+    "date": "22/04/2026 - 28/04/2026",
+    "image": "/offers-data/time-for-you-and-me.webp",
+    "alt": "alt",
+    "price": "6 nights from 659,-"
+  },
+  {
+    "title": "Winter Opening Special",
+    "date": "01/12/2026 - 07/12/2026",
+    "image": "/offers-data/winter-opening-4.webp",
+    "alt": "alt",
+    "price": "4 nights from 659,-"
+  }
+]
