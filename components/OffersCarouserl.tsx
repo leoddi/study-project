@@ -18,9 +18,9 @@ function OffersCarouserl() {
 
   return (
     <div className="space-y-8 relative">
-        <div className="w-full md:ml-12 lg:ml-32 lg:space-y-2">
+        <div className="w-full md:ml-12 lg:ml-40 lg:space-y-2 tracking-wide">
             <h2 className="text-2xl lg:text-3xl uppercase text-[#974806] font-extralight cursor-pointer">Packages and Deals</h2>
-            <h3 className="ml-12 lg:ml-44 hidden md:block text-xl lg:text-2xl text-[#664631] hover:text-[#99694A] cursor-pointer">There is much to experience here.</h3>
+            <h3 className="ml-12 lg:ml-44 hidden md:block text-xl lg:text-2xl lg:font-medium text-[#664631] hover:text-[#99694A] cursor-pointer">There is much to experience here.</h3>
         </div>
         <div className="overflow-x-scroll md:overflow-hidden w-full">
             <div className="w-full flex transition-transform duration-500 ease-in-out" style={{transform: `translateX(-${index*33.333}%)`}}>

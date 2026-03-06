@@ -44,7 +44,7 @@ function UpperMenu() {
         {!atTop? <Image src={logo} alt="hotel-logo" width={120} height={120} />:<></>}
         {links.slice(0, -1).map((link, i)=>(<p key={i} onMouseOver={()=>setmenuNav(link as MenuRoute)}>{link.replace(/([A-Z])/g, ' $1').toLowerCase()}</p>))}
       </div>
-      {atTop ? <div className="flex space-x-12">
+      {atTop ? <div className="flex space-x-12 *:cursor-pointer">
         <p>+39 0472 852075 </p>
         <p>info@hotel-fischer.it</p>
       </div> :
@@ -65,7 +65,10 @@ function UpperMenu() {
             <DropDownMenu links={ROUTE_MAP[menuNav]} divider={true} />
           </div>
           <div className="bg-white h-full w-1/2 flex flex-col items-center justify-between">
-            <Image src={logoWithBg} alt="hotel-logo" height={300} width={300} />
+            
+            <div className="w-full h-1/2 bg-[url(../public/teaser-text-bg.png)] bg-cover flex justify-center items-start">
+              <Image src={logoWithBg} alt="hotel-logo" height={300} width={300} />
+            </div>
             <div className="h-1/2 w-full p-10 text-[#99694A]">
               <div className="flex justify-between items-center">
                 <div className="space-x-2 *:hover:underline">
@@ -80,7 +83,7 @@ function UpperMenu() {
               </div> 
               <hr className="my-5 " />
               <div className="flex flex-col flex-wrap space-y-2 h-full text-lg pb-8 space-x-6 text-black">
-                {ROUTE_MAP['usefulInfo'].map((link, i)=>(<p className="w-1/2" key={i}>{link}</p>))}
+                {ROUTE_MAP['usefulInfo'].map((link, i)=>(<p className="w-1/2 hover:underline cursor-pointer" key={i}>{link}</p>))}
               </div>
             </div>
           </div>

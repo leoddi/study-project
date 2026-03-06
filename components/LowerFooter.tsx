@@ -23,18 +23,18 @@ function LowerFooter() {
             <Image src={tripAImg} alt=""></Image>
             <Image src={escapioImg} alt=""></Image>
         </div>
-        <div className="flex space-x-2 *:hover:cursor-pointer text-xs md:text-sm flex-wrap mx-8 justify-center">
-            <span>SocialWall</span>
+        <div className="flex space-x-2 text-xs md:text-sm flex-wrap mx-8 justify-center">
+            <span className="cursor-pointer hover:text-[#99694A]">SocialWall</span>
             <span>•</span>
-            <span>Legal Notice</span>
+            <span className="cursor-pointer hover:text-[#99694A]">Legal Notice</span>
             <span>•</span>
-            <span>Site map</span>
+            <span className="cursor-pointer hover:text-[#99694A]">Site map</span>
             <span>•</span>
-            <span>Cookie Policy</span>
+            <span className="cursor-pointer hover:text-[#99694A]">Cookie Policy</span>
             <span>•</span>
-            <span>Privacy</span>
+            <span className="cursor-pointer hover:text-[#99694A]">Privacy</span>
             <span>•</span>
-            <span>Cookie preferences</span>
+            <span className="cursor-default">Cookie preferences</span>
         </div>
     </div>
 

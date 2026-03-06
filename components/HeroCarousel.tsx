@@ -36,12 +36,12 @@ function Carousel() {
   return (
     <div className="relative overflow-hidden w-full h-[40vh] lg:h-[70vh]">
         <Image src={slides[counter]} alt="test" ref={imgRef} className="w-full h-full contrast-75 object-cover"></Image>
-        <div onClick={prev} className="hidden lg:block z-10 h-20 w-20 absolute bottom-20 left-1/3">
+        <div onClick={prev} className="hidden lg:block z-10 h-20 w-20 absolute bottom-20 left-1/3 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="0.6" stroke="white" className="size-auto">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
           </svg>
         </div>
-        <div onClick={next} className="hidden lg:block z-10 h-20 w-20 absolute bottom-20 right-1/3">
+        <div onClick={next} className="hidden lg:block z-10 h-20 w-20 absolute bottom-20 right-1/3 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="0.6" stroke="white" className="size-auto">
             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
           </svg>

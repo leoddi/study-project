@@ -67,10 +67,10 @@ export default function Home() {
         </div>
 
         <div className="w-full h-[40vh] lg:h-[55vh] text-white bg-[url(../public/brixen-stadt-und-kultur-alexfilz-7593-002.webp)] bg-cover bg-center bg-[#655042] hover:bg-blend-soft-light opacity-90 brightness-90 flex items-center justify-center">
-          <div className="flex-col w-5/6 space-y-6">
+          <div className="flex-col w-5/6 space-y-6 *:cursor-pointer">
             <Image src={suedtirolGuestPass} alt="suedtirol alto adige guest pass" width={240} height={108} className="w-40 lg:w-auto"/>
             <p className="uppercase text-2xl/8 lg:text-4xl/14 font-light">Brixen Südtirol Card:<br /> free and priceless!</p>
-            <div className="flex items-top lg:items-center text-xl lg:text-2xl mt-6">
+            <div className="flex items-top lg:items-center text-xl lg:text-2xl mt-6 hover:underline">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1" stroke="currentColor" className="size-8 rotate-180">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
               </svg>
@@ -80,16 +80,16 @@ export default function Home() {
         </div>
 
         <div className="w-full bg-[#F6F1ED] flex flex-col items-center">
-          <div className="w-full px-8 lg:7/9 xl:w-2/3 my-20">
+          <div className="w-full px-8 lg:7/9 xl:w-3/4 my-20">
             <OffersCarouserl />
           </div>
         </div>
 
         <div className="w-full bg-white flex flex-col items-center">
           <div className="w-5/6 xl:w-2/3 my-20 space-y-8">
-            <div className="w-full md:ml-12 lg:ml-32 space-y-2">
+            <div className="w-full md:ml-12 lg:ml-32 space-y-2 tracking-wide">
               <h2 className="text-2xl lg:text-3xl uppercase text-[#974806] font-extralight cursor-pointer">Your best moments</h2>
-              <h3 className="ml-12 lg:ml-44 hidden md:block text-xl lg:text-2xl text-[#664631] hover:text-[#99694A] cursor-pointer">Be fearured on our social media by using the #hotelfischer hashtag</h3>
+              <h3 className="ml-12 lg:ml-44 hidden md:block text-xl lg:text-2xl lg:font-medium text-[#664631] hover:text-[#99694A] cursor-pointer">Be featured on our social media by using the #hotelfischer hashtag</h3>
             </div>
             <div className="flex space-x-4 md:justify-center overflow-x-scroll md:overflow-auto w-full">
               <div className="relative w-72 h-80 shrink-0">
@@ -124,7 +124,7 @@ export default function Home() {
           <div className="w-5/6 xl:w-3/5 flex flex-col justify-center items-center space-y-8 md:space-y-3">
             <div className="relative w-full h-32 md:h-40">
               <Image className="absolute bottom-0 right-1/2 translate-x-1/2 w-48 h-28 md:w-68 md:h-38" src={blackLogo} alt="hotel logo" width={267} height={170}></Image>
-              <div className="flex space-x-2 absolute -bottom-16 md:bottom-0 right-1/2 md:right-1/4 translate-x-1/2">
+              <div className="flex space-x-2 absolute -bottom-16 md:bottom-0 right-1/2 md:right-1/4 translate-x-1/2 *:cursor-pointer">
                   <Image src={instaLogo} alt="Instragram logo" height={35} width={35} />
                   <Image src={facebookLogo} alt="Facebook logo" height={35} width={35} />
               </div>
