@@ -22,23 +22,30 @@ const ROUTE_MAP = {
         usefulInfo: ['Vouchers', 'Events and Museums', 'Decelerated arrivals and departures', 'Bressanone City of Water', 'Location', 'Weather', 'Webcam']
     }
 
+type MenuRoute = "welcome" | "seminars" | "cuisine" | "summer" | "winter" | "livingSpace" | "wellBeing" | "usefulInfo";
+
 
 function UpperMenu() {
-  type MenuRoute = "welcome" | "seminars" | "cuisine" | "summer" | "winter" | "livingSpace" | "wellBeing" | "usefulInfo";
 
   const links = Object.keys(ROUTE_MAP);
 
+  //boolean value to store user position on screen
   const [atTop, setAtTop] = useState(true);
+  //tracks selected menu items to dynamically display data
   const [menuNav, setmenuNav] = useState<MenuRoute|"">("");
   const [showMenu, setshowMenu] = useState(false);
 
+  //event listener for user scrolling down from top of the page
   useEffect(() => {
     const handleScroll = () => setAtTop(window.scrollY < 10);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
   <div>
+  
+    {/*Desktop upper menu bar*/}
     <div className="w-full bg-[#f6f1ed] hidden lg:flex items-center justify-between min-h-18 text-xs lg:text-sm xl:text-[17px] text-[#99694A] px-16 fixed z-50 text-nowrap shadow-sm">
       <div className="flex space-x-4 xl:space-x-8 items-center tracking-wide cursor-pointer capitalize">
         {!atTop? <Image src={logo} alt="hotel-logo" width={120} height={120} />:<></>}
@@ -58,6 +65,7 @@ function UpperMenu() {
       </div>}      
     </div>
 
+    {/*Desktop navigation menu, only loaded if cathegory is selected*/}
     {menuNav!=""?
       <div className='w-full h-full fixed hidden lg:block mt-18 z-30'>
         <div onMouseLeave={()=>setmenuNav("")} className='w-2/3 h-5/7 bg-blue-50 flex z-50 absolute'>
@@ -96,7 +104,7 @@ function UpperMenu() {
       </div>
     : <></>}
 
-
+    {/*Mobile upper menu*/}
     <div className="w-full bg-transparent flex justify-between fixed z-50 lg:hidden">
       <div className="flex justify-between lg:hidden space-x-1">
         <div className="h-12 w-12 bg-[#A65247] flex items-center justify-center cursor-pointer">
@@ -120,6 +128,7 @@ function UpperMenu() {
       </div>
     </div>
 
+    {/*Mobile navigation, conditionally loaded*/}
     {showMenu?
       <div className="w-full h-full fixed lg:hidden bg-[#4A362A] pt-18 px-10 z-30 text-white">
         <ul className="text-lg uppercase text-[#AA9384] tracking-wide mb-8">

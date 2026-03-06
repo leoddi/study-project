@@ -10,7 +10,7 @@ import escapioImg from '../public/footer-media/escapio.webp'
 
 
 
-function LowerFooter() {
+function Footer() {
   return (
     <div className="w-full flex flex-col items-center space-y-8">
         <div className="flex justify-center xl:justify-around space-x-4 items-center mx-8 lg:w-5/6 *:hover:cursor-pointer flex-wrap">
@@ -42,4 +42,4 @@ function LowerFooter() {
   )
 }
 
-export default LowerFooter
+export default Footer

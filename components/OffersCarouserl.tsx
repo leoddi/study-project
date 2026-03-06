@@ -6,15 +6,15 @@ import Link from "next/link"
 
 
 function OffersCarouserl() {
+    //tracks carousel index to translate them on screen
     const [index, setIndex] = useState(0);
 
+    //json file to track packages data
     const offerList = offers;
 
+    //click handlers to scroll the offers
     const next = ()=>{setIndex(index<offerList.length-3?index+1:0)};
     const prev = ()=>{setIndex(index==0?offerList.length-3:index-1)};
-
-
-    
 
   return (
     <div className="space-y-8 relative">

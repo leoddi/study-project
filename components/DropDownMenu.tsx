@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-
+//returns a list of link items with custom routes for navigation
 function DropDownMenu({links, divider}: {links: string[], divider: boolean}) {
-    
+
   return (
     <ul className="*:hover:text-[#A68547] w-2/3 space-y-3 cursor-pointer">
         {links.map((title, i)=>(

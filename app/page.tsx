@@ -11,7 +11,7 @@ import OffersCarouserl from "@/components/OffersCarouserl";
 import blackLogo from '../public/logo-flyout.png'
 import instaLogo from '../public/instagram-svgrepo-com.svg'
 import facebookLogo from '../public/facebook-svgrepo-com.svg'
-import LowerFooter from "@/components/LowerFooter";
+import Footer from "@/components/Footer";
 
 
 const montserrat = Montserrat({
@@ -25,8 +25,10 @@ export default function Home() {
   return (
     <div className="flex flex-col bg-white font-sans lg:pt-18 ">
       <main className={montserrat.className}>
+        {/*Hero section carousel*/}
         <Carousel />
 
+        {/*Main Section*/}
         <div className="md:max-w-2/3 lg:max-w-4/7 xl:max-w-5/12 mx-auto my-20 px-8">
           <div className="text-[#664631] flex-col justify-center items-center space-y-4">
             <Link href={'/'} className="uppercase text-[#99694A] text-xs font-semibold ml-4">welcome</Link>
@@ -37,6 +39,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/*USP section*/}
         <div className="w-full flex-col text-black">
           <div className="w-full bg-[#F6F1ED] flex flex-col lg:flex-row justify-center lg:items-center space-x-20 py-12 px-8">
             <Image src={natureImg} alt="snow mountain landscape" width={483} height={350} />
@@ -61,11 +64,13 @@ export default function Home() {
           </div>
         </div>
 
+        {/*Brand Philosophy section*/}
         <div className=" h-[40vh] lg:h-[60vh] w-full text-[#974806] bg-[url(../public/teaser-text-bg.png)] flex justify-center items-center text-right">
           <p className="text-2xl/8 lg:text-3xl/12 font-light w-4/5 lg:w-auto"><span className="font-normal">Our philosophy </span><br />
           Those who hike are moving away from everyday life. In<br /> nature, we at Hotel Fischer stand for introspection,<br /> switching off stress and simply being. </p>
         </div>
 
+        {/*Advantages card section*/}
         <div className="w-full h-[40vh] lg:h-[55vh] text-white bg-[url(../public/brixen-stadt-und-kultur-alexfilz-7593-002.webp)] bg-cover bg-center bg-[#655042] hover:bg-blend-soft-light opacity-90 brightness-90 flex items-center justify-center">
           <div className="flex-col w-5/6 space-y-6 *:cursor-pointer">
             <Image src={suedtirolGuestPass} alt="suedtirol alto adige guest pass" width={240} height={108} className="w-40 lg:w-auto"/>
@@ -79,12 +84,14 @@ export default function Home() {
           </div>
         </div>
 
+        {/*Offers section*/}
         <div className="w-full bg-[#F6F1ED] flex flex-col items-center">
           <div className="w-full px-8 lg:7/9 xl:w-3/4 my-20">
             <OffersCarouserl />
           </div>
         </div>
 
+        {/*Clients referrals section*/}
         <div className="w-full bg-white flex flex-col items-center">
           <div className="w-5/6 xl:w-2/3 my-20 space-y-8">
             <div className="w-full md:ml-12 lg:ml-32 space-y-2 tracking-wide">
@@ -120,6 +127,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/*Contacts section*/}
         <div className="relative w-full bg-[#F6F1ED] flex flex-col items-center pb-22">
           <div className="w-5/6 xl:w-3/5 flex flex-col justify-center items-center space-y-8 md:space-y-3">
             <div className="relative w-full h-32 md:h-40">
@@ -137,6 +145,7 @@ export default function Home() {
           <Link href={'/newsletter'} className=" absolute -bottom-4 px-10 py-3 bg-[#4A362A] hover:bg-[#775139] text-lg uppercase text-white">subscribe newsletter</Link>
         </div>
 
+        {/*Footer*/}
         <div className="w-full bg-white flex flex-col items-center pt-20 pb-4">
           <div className="flex justify-center space-x-6 flex-wrap mx-8 uppercase md:text-lg *:hover:underline *:cursor-pointer text-center">
             <p>voucher</p>
@@ -148,7 +157,7 @@ export default function Home() {
             <p>webcam</p>
           </div>
           <hr className="h-2 w-full my-10 text-[#AA9485]" />
-          <LowerFooter />
+          <Footer />
         </div>
         
       </main>
