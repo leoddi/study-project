@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import Image from "next/image";
 import slide1 from '../public/carousel-1.webp'
 import slide2 from '../public/carousel-2.webp'
@@ -13,7 +13,7 @@ function Carousel() {
   const slides = [slide1, slide2, slide3, slide4];
 
   const prev = ()=>{setCounter(counter==0?slides.length-1:counter-1)};
-  const next = ()=>{setCounter(counter==slides.length-1?0:counter+1)};
+  const next = useCallback(()=>{setCounter(counter==slides.length-1?0:counter+1)}, [counter, slides.length]);
 
   const imgRef = useRef<HTMLImageElement>(null);
   useEffect(() => {

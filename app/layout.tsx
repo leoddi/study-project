@@ -11,6 +11,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Hotel in Bressanone, Northern Italy - Hotel Fischer",
   description: "Hotel Fischer in Bressanone/Brixen, South Tyrol, Italy. Family-owned with a long tradition in hospitality. Nature, Active, Culinaric!",
+  robots: "noindex, nofollow",
 };
 
 export default function RootLayout({
