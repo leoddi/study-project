@@ -48,7 +48,7 @@ function UpperMenu() {
     {/*Desktop upper menu bar*/}
     <div className="w-full bg-[#f6f1ed] hidden lg:flex items-center justify-between min-h-18 text-xs lg:text-sm xl:text-[17px] text-[#99694A] px-16 fixed z-50 text-nowrap shadow-sm">
       <div className="flex space-x-4 xl:space-x-8 items-center tracking-wide cursor-pointer capitalize">
-        {!atTop? <Image src={logo} alt="hotel-logo" width={120} height={120} />:<></>}
+        {!atTop? <Link href={"/"} ><Image src={logo} alt="hotel-logo" width={120} height={120} /> </Link>:<></>}
         {links.slice(0, -1).map((link, i)=>(<p key={i} onMouseOver={()=>setmenuNav(link as MenuRoute)}>{link.replace(/([A-Z])/g, ' $1').toLowerCase()}</p>))}
       </div>
       {atTop ? <div className="flex space-x-12 *:cursor-pointer">
