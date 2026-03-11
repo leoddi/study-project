@@ -1,6 +1,7 @@
 import Image from "next/image"
 import bookIcon from '../public/food-svgrepo-com.svg'
 
+//fixed btns for book and enquiry
 function FixedBtns() {
   return (
     <div className="hidden lg:block fixed bottom-28 -right-42 space-y-4 z-50 text-white">

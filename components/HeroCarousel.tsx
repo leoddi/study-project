@@ -8,6 +8,7 @@ import slide4 from '../public/carousel-4.webp'
 import logo from '../public/logo.png'
 
 function Carousel() {
+  //carousel index tracker
   const [counter, setCounter] = useState(0);
 
   const slides = [slide1, slide2, slide3, slide4];
@@ -15,6 +16,7 @@ function Carousel() {
   const prev = ()=>{setCounter(counter==0?slides.length-1:counter-1)};
   const next = useCallback(()=>{setCounter(counter==slides.length-1?0:counter+1)}, [counter, slides.length]);
 
+  //animates the carousel images when they appear on screen
   const imgRef = useRef<HTMLImageElement>(null);
   useEffect(() => {
     const image = imgRef.current;
@@ -25,6 +27,7 @@ function Carousel() {
       image.classList.add('animate-images');
     }
 
+    //automatically changes slide after 5s
     const timer = setTimeout(() => {
       next();
     }, 5000);

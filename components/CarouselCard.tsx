@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+//card component for offer carousel
 function CarouselCard({name, imagePath, imageAlt, dates, price}: {name: string, imagePath: string, imageAlt: string, dates: string, price: string}) {
   return (
     <div className="w-11/12 sm:w-1/3 shrink-0 px-2.5 hover:cursor-pointer">
@@ -9,7 +10,7 @@ function CarouselCard({name, imagePath, imageAlt, dates, price}: {name: string, 
           <div className="absolute bottom-0 left-0 p-6 text-white space-y-2 lg:space-y-4 text-md lg:text-2xl">
               <p className="text-sm lg:text-lg">{dates}</p>
               <p>{name}</p>
-              <hr />
+              {price?<hr />:<></>}
               <p>{price}</p>
           </div>
         </div>
